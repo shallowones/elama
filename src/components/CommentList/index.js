@@ -19,6 +19,12 @@ CommentList.propTypes = {
   onUpdate: PropTypes.func.isRequired
 }
 
+/**
+ * Comment list with buttons (update & back)
+ * @param props
+ * @returns {*}
+ * @constructor
+ */
 export default function CommentList (props) {
   const { comments, loading, error, onUpdate, match } = props
   const id = match && match.params.id ? match.params.id : null

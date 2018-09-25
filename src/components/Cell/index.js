@@ -10,6 +10,12 @@ Cell.propTypes = {
   isLink: PropTypes.bool
 }
 
+/**
+ * Cell of table with link (optional)
+ * @param props
+ * @returns {*}
+ * @constructor
+ */
 export default function Cell (props) {
   const { name, isLink } = props
 

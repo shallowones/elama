@@ -7,6 +7,9 @@ import PropTypes from 'prop-types'
 import * as actions from '../services/actions'
 import CommentList from '../components/CommentList'
 
+/**
+ * Main container - App
+ */
 class App extends Component {
   static propTypes = {
     items: PropTypes.arrayOf(

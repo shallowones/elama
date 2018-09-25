@@ -18,6 +18,12 @@ Table.propTypes = {
   withLinksToDetailPage: PropTypes.bool.isRequired
 }
 
+/**
+ * Just table of comments that can show loader and errors other then the list
+ * @param props
+ * @returns {*}
+ * @constructor
+ */
 export default function Table (props) {
   const { comments, loading, error, withLinksToDetailPage } = props
 
