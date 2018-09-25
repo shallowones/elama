@@ -3,12 +3,29 @@
     [
       "@babel/preset-env",
       {
+        "loose": true,
         "modules": false,
-        "targets": {
-          "browsers": ["last 2 versions", "safari >= 7"]
-        }
+        "forceAllTransforms": true
       }
     ],
     "@babel/react"
-  ]
+  ],
+  "plugins": [
+    "babel-plugin-transform-class-properties"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "modules": "commonjs",
+            "useBuiltIns": "usage",
+            "debug": false
+          }
+        ],
+        "@babel/react"
+      ]
+    }
+  }
 }

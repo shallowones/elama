@@ -1,0 +1,40 @@
+body {
+    margin: 1rem;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    padding: .5rem;
+    border: 1px solid #333;
+}
+
+button {
+    font-size: 1rem;
+    padding: .5rem 3rem;
+    margin-bottom: 2rem;
+}
+
+button:first-child {
+    margin-right: 1rem;
+}
+
+.invalid {
+    color: #ff4632;
+}
+
+a {
+    display: inline-block;
+    vertical-align: top;
+}
